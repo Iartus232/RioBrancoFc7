@@ -1,0 +1,313 @@
+<!DOCTYPE html><html lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Rio Branco FC7 - Notícias, Área para Pais e Contato</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#4c3f00",
+                        "tertiary-fixed-dim": "#e9c400",
+                        "on-secondary-fixed-variant": "#1f477b",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#001b3c",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary-fixed": "#221b00",
+                        "on-primary-fixed-variant": "#2f486a",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#191c1d",
+                        "outline-variant": "#c4c6cf",
+                        "primary-fixed": "#d4e3ff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#c9a900",
+                        "on-secondary-container": "#294f83",
+                        "surface-container": "#edeeef",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-tint": "#476083",
+                        "surface-dim": "#d9dadb",
+                        "outline": "#74777f",
+                        "secondary-fixed": "#d5e3ff",
+                        "secondary": "#3a5f94",
+                        "on-surface": "#191c1d",
+                        "primary": "#000613",
+                        "on-primary-container": "#6f88ad",
+                        "tertiary": "#705d00",
+                        "tertiary-fixed": "#ffe16d",
+                        "primary-container": "#001f3f",
+                        "secondary-container": "#9fc2fe",
+                        "primary-fixed-dim": "#afc8f0",
+                        "inverse-primary": "#afc8f0",
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary-fixed-variant": "#544600",
+                        "on-error-container": "#93000a",
+                        "background": "#f8f9fa",
+                        "surface": "#f8f9fa",
+                        "surface-container-low": "#f3f4f5",
+                        "on-surface-variant": "#43474e",
+                        "on-primary-fixed": "#001c3a",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "md": "24px",
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "xl": "80px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "xs": "4px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-bold": ["Inter"],
+                        "button": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .stadium-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0, 31, 63, 0.08);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 50px -12px rgba(0, 31, 63, 0.12);
+        }
+        .bg-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0,31,63,0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden pt-20">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-[#001733] fixed top-0 w-full z-50 shadow-md border-b border-white/10"><div class="h-20 px-6 md:px-12 max-w-[1280px] mx-auto flex items-center justify-between"><a href="#" class="flex items-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqBXnMq9EooD-cMRFnp1bbOkbPXn6Up7-imASUUoQRbJVKblIu8OTOoDcpuffkIMQH8PCu14TyU1gXOJIKarRihQreIHsn9--Ppd6AYSyiip4WK1f57oJCc-tn0rzZGWNl-ETqaDi7U2fSBgq7BrFzZGkoKc9m0oO1eiCqpYIRglilfcZxwy6VxvqWFcQVZirOKH1WRMw7sXvvAtOPpPN8mBu6B7XZhUW14YA4UenY0uyXhqcJz30v_IuMhrKXIa7Fm_0" alt="Rio Branco FC7" class="h-12 w-auto object-contain"></a><ul class="hidden md:flex items-center gap-6 md:gap-8 font-button font-bold text-xs md:text-sm tracking-wider uppercase text-white"><li class=""><a href="#" class="text-white hover:text-[#FFCC00] transition-colors pb-1 block">INÍCIO</a></li><li class=""><a href="#" class="text-white hover:text-[#FFCC00] transition-colors pb-1 block">QUEM SOMOS</a></li><li class=""><a href="#" class="text-white hover:text-[#FFCC00] transition-colors pb-1 block">METODOLOGIA</a></li><li class=""><a href="#" class="text-white hover:text-[#FFCC00] transition-colors pb-1 block">CATEGORIAS</a></li><li class=""><a href="#" class="text-white hover:text-[#FFCC00] transition-colors pb-1 block">HORÁRIOS</a></li><li class=""><a href="#" class="text-[#FFD700] border-b-2 border-[#FFD700] pb-1 block font-bold">NOTÍCIAS</a></li><li class=""><a href="#" class="text-white hover:text-[#FFCC00] transition-colors pb-1 block">ELENCO</a></li></ul><button class="hidden md:block bg-[#FFD700] text-primary-container font-button font-bold text-xs md:text-sm px-5 py-2.5 rounded uppercase tracking-wider hover:bg-[#ffe16d] transition-colors">QUERO FAZER PARTE</button><button class="md:hidden text-white"><span class="material-symbols-outlined text-3xl">menu</span></button></div></nav>
+<!-- Notícias Section (Hero & Grid) -->
+<section class="pt-xl pb-xl px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto mb-lg">
+<div class="mb-lg">
+<h1 class="font-display-lg text-[48px] md:text-display-lg text-primary-container italic mb-sm">ÚLTIMAS <span class="text-tertiary">NOTÍCIAS</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Acompanhe os bastidores, resultados de jogos e novidades da academia que forma campeões.</p>
+</div>
+<!-- Bento Grid for News -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Featured News (Large) -->
+<article class="md:col-span-8 bg-surface-container-lowest rounded-xl stadium-shadow hover-lift overflow-hidden group border-t-4 border-tertiary relative h-[500px] flex flex-col justify-end">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A dynamic action shot of young football players in a high-intensity match during sunset. The lighting is dramatic, casting long shadows on the perfectly manicured green pitch. Players are wearing dark navy and gold kits. The scene conveys energy, determination, and professional youth sports photography style." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDaRTlTGktCn2rW-5-cOfXcqKffDHAv78V2mYers0OkaxP6GnWJznofuk-i7MqcNitL2NqAIWhBGbifcqEMZoL9GuU5uH4-BRSSPEs4Q-VuRWKyfLZQQ_LcvDHVCq2xOjjn0TallsEXIFHIXXVrY15ZPCO0PlKHf-VlEbPlIXBxm30OANk7MKYLEUTtnNFEDtkYZnNhruMJbdGjK4GtD8ruRpI41UtYKc7a-TRDTGgaRHxuuU2Ul63L-A&quot;);"></div>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/60 to-transparent bg-cover"></div>
+<div class="relative p-lg z-10">
+<div class="flex gap-sm mb-md">
+<span class="bg-tertiary text-on-tertiary font-label-bold text-label-bold px-3 py-1 rounded uppercase tracking-wider">Destaques</span>
+<span class="bg-primary text-on-primary/80 font-label-bold text-label-bold px-3 py-1 rounded uppercase tracking-wider">Sub-15</span>
+</div>
+<h2 class="font-headline-lg text-[32px] md:text-headline-lg text-on-primary mb-md leading-tight group-hover:text-tertiary-fixed transition-colors">Vitória Histórica: Sub-15 conquista o campeonato regional de forma invicta</h2>
+<a class="inline-flex items-center gap-2 text-tertiary-fixed font-button text-button uppercase hover:gap-4 transition-all" href="#">
+                        LER MAIS <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_right_alt</span>
+</a>
+</div>
+</article>
+<!-- Secondary News Stack -->
+<div class="md:col-span-4 flex flex-col gap-gutter h-full">
+<article class="flex-1 bg-surface-container-lowest rounded-xl stadium-shadow hover-lift overflow-hidden group flex flex-col">
+<div class="h-48 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A focused close-up of a football coach explaining tactics to a group of young players on a pristine training field. The coach is wearing professional academy gear. The lighting is bright and sunny, emphasizing focus, learning, and discipline in a modern sports facility setting." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuD1jLo3fveKFQHuw6xIBP_X2W2FrX9iB-Z2vq01et3EMA82DmhZFT6Do9AQUkAXIa1s8nPk_nM2GNNJcEq4lceVKok2_0rMO5a0ePBWSqKnT1WDqLTxy5QaH_yfNK8xy9kVjoo26b59yb5bNiY4MPrMztQC2MHb615uctqCtku8nPKwuREVaboVjnyqS9t7GcxKZHBXCSxJD4tCv7fLdruLSkjYNFj2et5zjaeNSZ-yyONcvmFK3bgH-Q&quot;);"></div>
+<div class="p-md flex flex-col flex-1 bg-surface-container-lowest relative z-10 -mt-2">
+<span class="text-tertiary-container font-label-bold text-label-bold uppercase tracking-wider mb-2">Treinamentos</span>
+<h3 class="font-headline-md text-headline-md text-primary-container mb-auto group-hover:text-secondary transition-colors">Nova metodologia europeia implementada nos treinos físicos</h3>
+<a class="inline-flex items-center gap-2 text-primary-container font-button text-label-bold uppercase mt-md hover:text-tertiary transition-colors" href="#">
+                            LER MAIS <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</article>
+<article class="flex-1 bg-surface-container-lowest rounded-xl stadium-shadow hover-lift overflow-hidden group flex flex-col">
+<div class="p-md flex flex-col flex-1 border-l-4 border-secondary">
+<span class="text-secondary font-label-bold text-label-bold uppercase tracking-wider mb-2">Jogos</span>
+<h3 class="font-headline-md text-[20px] text-primary-container mb-2 group-hover:text-secondary transition-colors">Agenda do Final de Semana: Clássicos pela liga amadora</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-auto">Confira os horários e locais das partidas das categorias Sub-11 e Sub-13 neste sábado.</p>
+<a class="inline-flex items-center gap-2 text-primary-container font-button text-label-bold uppercase mt-md hover:text-tertiary transition-colors" href="#">
+                            LER MAIS <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Área para Pais Section -->
+<section class="bg-surface-bright py-xl border-y border-outline-variant/30 relative overflow-hidden">
+<div class="absolute right-0 top-0 w-1/3 h-full bg-pattern opacity-50 pointer-events-none"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="relative">
+<div class="absolute -inset-4 bg-secondary-fixed/20 rounded-xl blur-xl"></div>
+<img alt="Pai e filho na academia" class="relative rounded-xl stadium-shadow object-cover w-full h-[500px] bg-center" data-alt="A heartwarming portrait of a proud parent standing next to their young child who is fully kitted out in the Rio Branco FC7 football uniform. They are on a sunny football pitch. The parent looks supportive and confident, conveying trust and family values associated with a high-end youth academy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDLYx9rM2qSiBMQtH5qvI-mShBS2ay4EJSfRXWVPOt6Ca0937M_6kDtqUb3nSbD9l4GRpKvKf78Zttq9f3OM2xmG7u-mbqgDOuvRzNufRlA2Glm3TyxV71hrXBPRX5VrcsbVJVvvDhgOCwii6pRfVaUnxVlQlBc8RYjeq1xScMvVdLOZ9KwthJ-I_LqO6SC6p4kQtfuBEgckNFAHlcUoWRot_srYCUjjktqbHWtGP_vsV7HBWwdEVOnw">
+<!-- Trust Badge -->
+<div class="absolute -bottom-6 -right-6 bg-surface-container-lowest p-md rounded-xl stadium-shadow flex items-center gap-sm">
+<span class="material-symbols-outlined text-[40px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div>
+<div class="font-headline-md text-[18px] text-primary-container m-0 leading-tight">Ambiente Seguro</div>
+<div class="font-body-md text-sm text-on-surface-variant">Profissionais certificados</div>
+</div>
+</div>
+</div>
+<div class="pl-0 md:pl-lg z-10">
+<span class="font-label-bold text-label-bold text-tertiary uppercase tracking-widest mb-sm block">Área para Pais</span>
+<h2 class="font-headline-lg text-[40px] leading-tight text-primary-container mb-md">SEU FILHO PODE <br><span class="italic font-black text-secondary">COMEÇAR AQUI.</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">Sabemos que você busca mais do que apenas um esporte para seu filho. Na Rio Branco FC7, oferecemos um ambiente disciplinado, focado no desenvolvimento motor, cognitivo e nos valores do esporte em equipe.</p>
+<ul class="space-y-sm mb-lg">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-primary-container font-medium">Acompanhamento escolar exigido</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-primary-container font-medium">Metodologia pautada no respeito e disciplina</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-primary-container font-medium">Instalações de nível profissional</span>
+</li>
+</ul>
+<button class="bg-primary-container text-on-primary font-button text-button uppercase tracking-wider px-8 py-4 rounded hover:bg-secondary hover:-translate-y-[2px] transition-all hover:shadow-lg">
+                    AGENDAR VISITA
+                </button>
+</div>
+</div>
+</section>
+<!-- Contato Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto">
+<div class="text-center mb-lg">
+<h2 class="font-display-lg text-[40px] md:text-display-lg text-primary-container italic mb-sm">FALE <span class="text-tertiary">CONOSCO</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Dúvidas sobre matrículas, horários ou patrocínios? Envie uma mensagem.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-lg">
+<!-- Informações -->
+<div class="lg:col-span-4 flex flex-col gap-md">
+<div class="bg-primary-container text-on-primary p-lg rounded-xl stadium-shadow relative overflow-hidden h-full flex flex-col justify-center">
+<!-- Decor -->
+<div class="absolute -right-10 -top-10 opacity-10">
+<span class="material-symbols-outlined text-[150px]" style="font-variation-settings: 'FILL' 1;">sports_soccer</span>
+</div>
+<div class="relative z-10 space-y-lg">
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-tertiary text-[32px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div>
+<h4 class="font-headline-md text-[18px] text-tertiary-fixed mb-1">Localização</h4>
+<p class="font-body-md text-on-primary/80">Arena Rio Branco<br>Av. Esportiva, 1000 - Centro</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-tertiary text-[32px]" style="font-variation-settings: 'FILL' 1;">forum</span>
+<div>
+<h4 class="font-headline-md text-[18px] text-tertiary-fixed mb-1">WhatsApp</h4>
+<p class="font-body-md text-on-primary/80">(11) 99999-0000</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-tertiary text-[32px]">photo_camera</span>
+<div>
+<h4 class="font-headline-md text-[18px] text-tertiary-fixed mb-1">Instagram</h4>
+<p class="font-body-md text-on-primary/80">@riobrancofc7</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Formulário -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-lg rounded-xl stadium-shadow border border-outline-variant/20">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="col-span-1 md:col-span-2">
+<label class="block font-label-bold text-label-bold text-primary-container mb-2">NOME DO RESPONSÁVEL</label>
+<input class="w-full bg-surface border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary focus:border-secondary transition-all outline-none" placeholder="Ex: João da Silva" type="text">
+</div>
+<div class="col-span-1">
+<label class="block font-label-bold text-label-bold text-primary-container mb-2">NOME DO ATLETA</label>
+<input class="w-full bg-surface border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary focus:border-secondary transition-all outline-none" placeholder="Ex: Pedro da Silva" type="text">
+</div>
+<div class="col-span-1">
+<label class="block font-label-bold text-label-bold text-primary-container mb-2">IDADE DO ATLETA</label>
+<select class="w-full bg-surface border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary focus:border-secondary transition-all outline-none appearance-none">
+<option>Selecione a idade</option>
+<option>Sub-7 (6 e 7 anos)</option>
+<option>Sub-9 (8 e 9 anos)</option>
+<option>Sub-11 (10 e 11 anos)</option>
+<option>Sub-13 (12 e 13 anos)</option>
+<option>Sub-15 (14 e 15 anos)</option>
+</select>
+</div>
+<div class="col-span-1 md:col-span-2">
+<label class="block font-label-bold text-label-bold text-primary-container mb-2">MENSAGEM (OPCIONAL)</label>
+<textarea class="w-full bg-surface border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary focus:border-secondary transition-all outline-none resize-none" placeholder="Como podemos ajudar?" rows="4"></textarea>
+</div>
+<div class="col-span-1 md:col-span-2 flex justify-end mt-sm">
+<button class="bg-secondary text-on-secondary font-button text-button uppercase tracking-wider px-8 py-4 rounded hover:bg-primary-container hover:-translate-y-[2px] transition-all hover:shadow-lg w-full md:w-auto" type="button">
+                            ENVIAR MENSAGEM
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- CTA Final Section -->
+<section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A wide, sweeping shot of a pristine professional football pitch under bright stadium lights at night. The lush green grass contrasts beautifully with the deep blue night sky. A lone football sits on the center spot. The image conveys a premium, aspirational, and highly professional sporting environment." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCOhj-MrrSX9e9Wt4mvRo0y7ZPQwMaFhGpwXT2Bx7oGtC1N2Qb7A81baFtouJj2oqr8gARhmYcC9Pp07vL24-STSWtJ1tUOOexeK8Ite3BhLptu7IkIAYf82rI3-asztEWj8RV0QfFAXJiyKZd09n7cc6Wpzkdy0NqtSPfCMVtiiVpNyR_CzZnecdwIGlMiJTcdgDWm8DzGCjjxnktx9tOS09Lf54WRFDBp-kkaMN4o6y0Ia_LiO5eNVw&quot;);"></div>
+<div class="absolute inset-0 bg-primary-container/80"></div> <!-- Dark overlay -->
+<div class="relative z-10 text-center px-margin-mobile flex flex-col items-center">
+<h2 class="font-display-lg text-[48px] md:text-[64px] text-on-primary italic mb-sm">A JORNADA <span class="text-tertiary-fixed">COMEÇA AQUI.</span></h2>
+<p class="font-body-lg text-[20px] text-on-primary/80 max-w-2xl mb-xl">Vagas limitadas para as próximas turmas. Não perca a chance de vestir essa camisa.</p>
+<button class="bg-tertiary-fixed text-primary-container font-headline-md text-[20px] uppercase tracking-wider px-10 py-5 rounded-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_30px_rgba(255,215,0,0.3)] flex items-center gap-3">
+                QUERO FAZER PARTE
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">sports_soccer</span>
+</button>
+</div>
+</section>
+<!-- Footer (Shared Component) -->
+<footer class="bg-primary-container dark:bg-primary-container w-full py-xl border-t-4 border-tertiary"><div class="px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto"><div class="grid grid-cols-1 md:grid-cols-12 gap-lg"><div class="md:col-span-4 flex flex-col gap-md"><img alt="Rio Branco FC7 Logo" class="h-16 w-auto mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUJsYetODGviu7ywdxfHMfq_3Ch170VneaLr4WBOtcpYFXzX7yEaYZirFQuqhLGWqaEQnV5i7fEfHDJ7b9ekPbUew686ZU_6fQSQal9E4UObjSyY845Jub9G48t5OCr58meNBE9zhPKZNHBENlbRU2-kT9182R4J0Gbwk_3oA_z6u-U1PbZ7dYfcKXmb4kB1kC2_rDv6Nntdg97WnXlLsMG4sa5jS3BOaVL4fj7GQXzalhzOL1UbFa_x6SZLFUeithPp4"><p class="font-body-md text-on-primary/80 max-w-xs">Formando campeões para a vida através do esporte, disciplina e excelência técnica.</p><div class="flex gap-4 mt-2"><a class="text-tertiary hover:text-on-tertiary transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a><a class="text-tertiary hover:text-on-tertiary transition-colors" href="#"><span class="material-symbols-outlined">forum</span></a></div></div><div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-md"><div><h4 class="font-headline-md text-[18px] text-tertiary mb-md uppercase tracking-wider">Links Úteis</h4><ul class="space-y-3"><li class=""><a class="text-on-primary/70 hover:text-tertiary transition-colors" href="#">Início</a></li><li class=""><a class="text-on-primary/70 hover:text-tertiary transition-colors" href="#">Metodologia</a></li><li class=""><a class="text-on-primary/70 hover:text-tertiary transition-colors" href="#">Categorias</a></li><li class=""><a class="text-on-primary/70 hover:text-tertiary transition-colors" href="#">Horários</a></li></ul></div><div><h4 class="font-headline-md text-[18px] text-tertiary mb-md uppercase tracking-wider">Institucional</h4><ul class="space-y-3"><li class=""><a class="text-on-primary/70 hover:text-tertiary transition-colors" href="#">Quem Somos</a></li><li class=""><a class="text-on-primary/70 hover:text-tertiary transition-colors" href="#">Trabalhe Conosco</a></li><li class=""><a class="text-on-primary/70 hover:text-tertiary transition-colors" href="#">Privacidade</a></li></ul></div><div><h4 class="font-headline-md text-[18px] text-tertiary mb-md uppercase tracking-wider">Fale Conosco</h4><ul class="space-y-3"><li class="flex items-center gap-2 text-on-primary/70"><span class="material-symbols-outlined text-sm">location_on</span>Arena Rio Branco</li><li class="flex items-center gap-2 text-on-primary/70"><span class="material-symbols-outlined text-sm">forum</span>(11) 99999-0000</li><li class=""><a class="text-tertiary font-bold hover:underline" href="#">Contato</a></li></ul></div></div></div><div class="mt-xl pt-md border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4"><p class="text-on-primary/50 text-sm">© 2024 Rio Branco FC7 Academy. Todos os direitos reservados.</p><p class="text-on-primary/50 text-sm">Desenvolvido com foco na excelência esportiva.</p></div></div></footer>
+<script>
+        // Simple scroll interaction for Nav
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('topNav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body></html>
