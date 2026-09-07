@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+
+<html class="h-full" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rio Branco FC7 - Escola de Futebol &amp; Academia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary": "#000613",
+          "primary-container": "#001733",
+          "secondary": "#3a5f94",
+          "secondary-container": "#9fc2fe",
+          "secondary-fixed-dim": "#a7c8ff",
+          "tertiary": "#705d00",
+          "tertiary-fixed": "#ffe16d",
+          "gold": "#FFD700",
+          "gold-hover": "#ffe16d",
+          "surface": "#f8f9fa",
+          "surface-container-low": "#f3f4f5",
+          "surface-container": "#edeeef",
+          "surface-container-high": "#e7e8e9",
+          "surface-variant": "#e1e3e4",
+          "on-primary": "#ffffff",
+          "on-background": "#191c1d",
+          "on-surface-variant": "#43474e",
+          "outline-variant": "#c4c6cf"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Montserrat", "sans-serif"],
+          "headline-md": ["Montserrat", "sans-serif"],
+          "display-lg": ["Montserrat", "sans-serif"],
+          "button": ["Montserrat", "sans-serif"],
+          "body-lg": ["Inter", "sans-serif"],
+          "body-md": ["Inter", "sans-serif"],
+          "label-bold": ["Inter", "sans-serif"]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  .stadium-shadow {
+    box-shadow: 0 20px 40px -10px rgba(0, 23, 51, 0.08);
+  }
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(0, 23, 51, 0.15);
+  }
+  .kinetic-bg {
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 12px, rgba(0,23,51,0.02) 12px, rgba(0,23,51,0.02) 24px);
+  }
+</style>
+</head>
+<body class="bg-[#f8f9fa] text-[#191c1d] font-body-md min-h-screen overflow-x-hidden overflow-y-auto antialiased flex flex-col pt-20">
+<!-- TopNavBar -->
+<header class="bg-[#001733] fixed top-0 left-0 right-0 w-full z-50 shadow-lg border-b border-white/10">
+<div class="h-20 px-4 md:px-10 max-w-[1280px] mx-auto flex items-center justify-between">
+<!-- Logo Oficial sem texto -->
+<a class="flex items-center group" href="#">
+<img alt="Rio Branco FC7 Escudo Oficial" class="h-14 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXC7VdzQVy0EIDSCdVYbLZP2KicIL4LTOnPIjeJkn0yNMA94ybV-5YqazaZ9FqeelQD8PiuRy15-MPiPFsVmRk7bw6nr1YPQHIKNbceF5IlwN4mdE3AuczK6skU1jQoQeG29gUgzTkVFLzDcQC2aC0i7VgcuxxYkQro_GSPP_xn1BQWlbMrlH1ZZ-785KLBmaBhIRa1L39DsuHlJSbXyaQJngbObwhedzwlrh26aVu48z4qamyxGGiUhHyPjMKdXL8oCc"/>
+</a>
+<!-- Menu Links -->
+<ul class="hidden lg:flex items-center gap-6 xl:gap-8 font-button font-bold text-xs md:text-sm tracking-wider uppercase text-white">
+<li>
+<a class="text-[#FFD700] border-b-2 border-[#FFD700] pb-1 block font-bold transition-colors" href="#">INÃCIO</a>
+</li>
+<li>
+<a class="text-white hover:text-[#FFD700] transition-colors pb-1 block" href="quem_somos_rio_branco_fc7_corrigida/code.html">QUEM SOMOS</a>
+</li>
+<li>
+<a class="text-white hover:text-[#FFD700] transition-colors pb-1 block" href="treinamentos_e_equipes/code.html">METODOLOGIA</a>
+</li>
+<li>
+<a class="text-white hover:text-[#FFD700] transition-colors pb-1 block" href="categorias_e_atletas_rio_branco_fc7/code.html">CATEGORIAS</a>
+</li>
+<li>
+<a class="text-white hover:text-[#FFD700] transition-colors pb-1 block" href="hor_rios_rio_branco_fc7_interativo/code.html">HORÃRIOS</a>
+</li>
+<li>
+<a class="text-white hover:text-[#FFD700] transition-colors pb-1 block" href="not_cias_e_contato_corrigida/code.html">NOTÃCIAS</a>
+</li>
+<li>
+<a class="text-white hover:text-[#FFD700] transition-colors pb-1 block" href="elenco_e_alunos_rio_branco_fc7/code.html">ELENCO</a>
+</li>
+</ul>
+<!-- CTA Direito e Mobile trigger -->
+<div class="flex items-center gap-3">
+<a class="bg-[#FFD700] text-[#001733] font-button font-black text-xs md:text-sm px-5 md:px-6 py-2.5 rounded uppercase tracking-wider hover:bg-[#ffe16d] transition-all shadow-md active:scale-95 text-center inline-block" href="#matriculas">
+        QUERO FAZER PARTE
+      </a>
+<button aria-label="Abrir menu" class="lg:hidden text-white p-1" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown Navigation -->
+<div class="hidden lg:hidden bg-[#001229] border-t border-white/10 px-6 py-4 transition-all" id="mobile-menu">
+<ul class="flex flex-col space-y-3 font-button font-bold text-sm uppercase text-white">
+<li><a class="text-[#FFD700] block py-1" href="#">INÃCIO</a></li>
+<li><a class="hover:text-[#FFD700] block py-1" href="quem_somos_rio_branco_fc7_corrigida/code.html">QUEM SOMOS</a></li>
+<li><a class="hover:text-[#FFD700] block py-1" href="treinamentos_e_equipes/code.html">METODOLOGIA</a></li>
+<li><a class="hover:text-[#FFD700] block py-1" href="categorias_e_atletas_rio_branco_fc7/code.html">CATEGORIAS</a></li>
+<li><a class="hover:text-[#FFD700] block py-1" href="hor_rios_rio_branco_fc7_interativo/code.html">HORÃRIOS</a></li>
+<li><a class="hover:text-[#FFD700] block py-1" href="not_cias_e_contato_corrigida/code.html">NOTÃCIAS</a></li>
+<li><a class="hover:text-[#FFD700] block py-1" href="elenco_e_alunos_rio_branco_fc7/code.html">ELENCO</a></li>
+</ul>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[580px] md:min-h-[640px] flex items-center justify-center overflow-hidden bg-[#001733]">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full absolute inset-0 transform scale-105 transition-transform duration-1000" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0ge5k_JUzooP5k8eHqaJEkJ26k3PprHgToYiwpUGJxCnurp2xZPvDdBDt4Gym61TlqtGBo25edBlQkAh9NiicTt9LTJnJ3kAQp9sE0wpiv0tTPSmPg2RjYXpQqXuMDHLuwb4FJEAhWFXcMwTb7ONZUjDp9Tpp90Zlxvj6AW6B6PDORkAU0Sk2gACwnE5PB4vy8W6Rq6uzCYOxpADncYAzTkcxg9JxQVBacy214VkqKAHTeK6Nt4MD0w');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001733] via-[#001733]/85 to-[#001733]/40"></div>
+</div>
+<div class="relative z-10 text-center px-4 md:px-12 max-w-[1100px] mx-auto py-16">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/40 text-[#FFD700] text-xs md:text-sm font-bold tracking-widest uppercase mb-6">
+<span class="w-2 h-2 rounded-full bg-[#FFD700] animate-pulse"></span>
+        Temporada 2024 / 2025 Aberta
+      </span>
+<h1 class="font-display-lg text-3xl sm:text-5xl md:text-6xl text-white italic mb-6 tracking-tight leading-tight">
+        FORMAÃ‡ÃƒO ESPORTIVA<br/>
+<span class="text-[#FFD700]">DE EXCELÃŠNCIA</span>
+</h1>
+<p class="font-body-lg text-base sm:text-lg md:text-xl text-slate-200 max-w-2xl mx-auto mb-8 leading-relaxed">
+        A academia padrÃ£o-ouro para o desenvolvimento de jovens talentos no futebol. Disciplina, tÃ©cnica refinada e valores sÃ³lidos para as prÃ³ximas geraÃ§Ãµes de campeÃµes.
+      </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<a class="w-full sm:w-auto bg-[#FFD700] text-[#001733] font-button font-black text-sm md:text-base px-8 py-4 rounded-lg shadow-lg hover-lift hover:bg-white transition-all text-center" href="#matriculas">
+          AGENDAR AULA EXPERIMENTAL
+        </a>
+<a class="w-full sm:w-auto border-2 border-[#FFD700] text-[#FFD700] font-button font-bold text-sm md:text-base px-8 py-4 rounded-lg hover-lift hover:bg-[#FFD700]/10 transition-all text-center" href="treinamentos_e_equipes/code.html">
+          CONHEÃ‡A NOSSO MÃ‰TODO
+        </a>
+</div>
+</div>
+</section>
+<!-- Quem Somos & PropÃ³sito (com EstatÃ­sticas) -->
+<section class="py-16 md:py-24 px-4 md:px-12 bg-white kinetic-bg" id="quem-somos">
+<div class="max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+<div class="lg:col-span-6">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-8 h-1 bg-[#FFD700]"></span>
+<span class="font-label-bold text-xs font-bold text-[#001733] uppercase tracking-widest">Quem Somos &amp; PropÃ³sito</span>
+</div>
+<h2 class="font-headline-lg text-2xl md:text-4xl text-[#001733] mb-6 font-extrabold leading-tight">
+            MAIS DO QUE FORMAR JOGADORES, PREPARAMOS PARA A VIDA
+          </h2>
+<p class="font-body-md text-base text-[#43474e] mb-4 leading-relaxed">
+            Na <strong class="text-[#001733]">Rio Branco FC7</strong>, compreendemos que o esporte Ã© a mais poderosa ferramenta de transformaÃ§Ã£o social e comportamental. Nossa metodologia une conceitos modernos do futebol europeu Ã  essÃªncia, ginga e habilidade do futebol brasileiro.
+          </p>
+<p class="font-body-md text-base text-[#43474e] mb-6 leading-relaxed">
+            Proporcionamos campos com gramado sintÃ©tico de Ãºltima geraÃ§Ã£o, equipe multidisciplinar e acompanhamento pedagÃ³gico contÃ­nuo para que cada jovem atinja seu potencial mÃ¡ximo.
+          </p>
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-2 font-button font-bold text-sm text-[#001733] border-b-2 border-[#FFD700] pb-1 hover:text-secondary transition-colors" href="treinamentos_e_equipes/code.html">
+              CONHEÃ‡A NOSSA HISTÃ“RIA E ESTRUTURA
+              <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="absolute -top-3 -left-3 w-full h-full bg-[#FFD700] rounded-xl -z-0"></div>
+<div class="relative z-10 overflow-hidden rounded-xl shadow-xl">
+<img alt="Treinador orientando jovem atleta no Rio Branco FC7" class="w-full h-[380px] md:h-[420px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRyPmYuwxU4DNfv4EBbvjb8jGBiCokdkc8w29b0UC6NqXJ06mbVYsiMAHdNUi0tRHZzw986iPqR_EIFRYdb2j0U8IJYmDrHGUQaxFgTJAvDkb-bKCNElo--uwTCky0nseNZ0xNr_DAvUK7nNUFPq-8Lj2pk_PPpwLdyaUakvk_qmpDkEWdmhrfKm640f9yXyRbjhMq4W0WZZofFtS6yKALqryRrbWYrHa9SBjzxjbB6jNqgXRvHbiYzg"/>
+</div>
+</div>
+</div>
+<!-- MÃ©tricas / EstatÃ­sticas -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 bg-[#001733] text-white p-8 md:p-10 rounded-2xl shadow-xl">
+<div class="border-r border-white/10 last:border-none pr-4">
+<p class="text-3xl md:text-5xl font-extrabold text-[#FFD700] font-headline-lg mb-1">+1.200</p>
+<p class="text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-300">Atletas Formados</p>
+</div>
+<div class="border-r border-white/10 last:border-none pr-4">
+<p class="text-3xl md:text-5xl font-extrabold text-[#FFD700] font-headline-lg mb-1">100%</p>
+<p class="text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-300">Licenciados CBF</p>
+</div>
+<div class="border-r border-white/10 last:border-none pr-4">
+<p class="text-3xl md:text-5xl font-extrabold text-[#FFD700] font-headline-lg mb-1">18</p>
+<p class="text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-300">TÃ­tulos Regionais</p>
+</div>
+<div>
+<p class="text-3xl md:text-5xl font-extrabold text-[#FFD700] font-headline-lg mb-1">100%</p>
+<p class="text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-300">Foco no Desenvolvimento</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Os Pilares da Nossa FormaÃ§Ã£o -->
+<section class="py-16 md:py-24 px-4 md:px-12 bg-[#f3f4f5]" id="metodologia">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 mb-2">
+<span class="w-6 h-1 bg-[#FFD700]"></span>
+<span class="font-label-bold text-xs font-bold text-[#001733] uppercase tracking-widest">Metodologia Integrada</span>
+<span class="w-6 h-1 bg-[#FFD700]"></span>
+</div>
+<h2 class="font-headline-lg text-2xl md:text-4xl text-[#001733] font-black">
+          OS PILARES DA NOSSA FORMAÃ‡ÃƒO
+        </h2>
+<p class="font-body-md text-sm md:text-base text-[#43474e] mt-3">
+          Desenvolvemos atletas completos atravÃ©s de um currÃ­culo pedagÃ³gico progressivo e estruturado em 4 grandes pilares fundamentais.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pilar 1 -->
+<div class="bg-white p-7 rounded-xl border-t-4 border-[#FFD700] stadium-shadow hover-lift flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 bg-[#001733] text-[#FFD700] rounded-xl flex items-center justify-center mb-6 shadow-md">
+<span class="material-symbols-outlined text-3xl">sports_soccer</span>
+</div>
+<h3 class="font-headline-md text-lg font-bold text-[#001733] mb-3">TÃ©cnica &amp; DomÃ­nio</h3>
+<p class="font-body-md text-sm text-[#43474e] leading-relaxed">
+              Refinamento dos gestos fundamentais: passe, conduÃ§Ã£o ambidestra, drible de desequilÃ­brio e finalizaÃ§Ã£o precisa sob pressÃ£o de tempo e espaÃ§o.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs font-bold text-[#001733]">
+<span class="material-symbols-outlined text-sm text-[#FFD700] mr-1">check_circle</span>
+            Controle de bola absoluto
+          </div>
+</div>
+<!-- Pilar 2 -->
+<div class="bg-white p-7 rounded-xl border-t-4 border-[#001733] stadium-shadow hover-lift flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 bg-[#001733] text-[#FFD700] rounded-xl flex items-center justify-center mb-6 shadow-md">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="font-headline-md text-lg font-bold text-[#001733] mb-3">TÃ¡tica &amp; InteligÃªncia de Jogo</h3>
+<p class="font-body-md text-sm text-[#43474e] leading-relaxed">
+              CompreensÃ£o posicional, ocupaÃ§Ã£o inteligente dos espaÃ§os, tomadas de decisÃ£o ultrarrÃ¡pidas e leitura dos momentos de transiÃ§Ã£o ofensiva/defensiva.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs font-bold text-[#001733]">
+<span class="material-symbols-outlined text-sm text-[#FFD700] mr-1">check_circle</span>
+            VisÃ£o e percepÃ§Ã£o cognitiva
+          </div>
+</div>
+<!-- Pilar 3 -->
+<div class="bg-white p-7 rounded-xl border-t-4 border-[#FFD700] stadium-shadow hover-lift flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 bg-[#001733] text-[#FFD700] rounded-xl flex items-center justify-center mb-6 shadow-md">
+<span class="material-symbols-outlined text-3xl">fitness_center</span>
+</div>
+<h3 class="font-headline-md text-lg font-bold text-[#001733] mb-3">Condicionamento FÃ­sico</h3>
+<p class="font-body-md text-sm text-[#43474e] leading-relaxed">
+              CoordenaÃ§Ã£o motora, agilidade, velocidade de reaÃ§Ã£o e prevenÃ§Ã£o de lesÃµes, adaptados estritamente Ã  faixa etÃ¡ria e fase biolÃ³gica de cada aluno.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs font-bold text-[#001733]">
+<span class="material-symbols-outlined text-sm text-[#FFD700] mr-1">check_circle</span>
+            Desenvolvimento biodinÃ¢mico
+          </div>
+</div>
+<!-- Pilar 4 -->
+<div class="bg-white p-7 rounded-xl border-t-4 border-[#001733] stadium-shadow hover-lift flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 bg-[#001733] text-[#FFD700] rounded-xl flex items-center justify-center mb-6 shadow-md">
+<span class="material-symbols-outlined text-3xl">shield</span>
+</div>
+<h3 class="font-headline-md text-lg font-bold text-[#001733] mb-3">Disciplina &amp; Cidadania</h3>
+<p class="font-body-md text-sm text-[#43474e] leading-relaxed">
+              Cultura do respeito aos companheiros, Ã¡rbitros e adversÃ¡rios, resiliÃªncia em campo, pontualidade, lideranÃ§a e espÃ­rito de equipe para toda a vida.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs font-bold text-[#001733]">
+<span class="material-symbols-outlined text-sm text-[#FFD700] mr-1">check_circle</span>
+            CarÃ¡ter e Ã©tica esportiva
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Nossas Categorias de Base -->
+<section class="py-16 md:py-24 px-4 md:px-12 bg-white" id="categorias">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-1 bg-[#FFD700]"></span>
+<span class="font-label-bold text-xs font-bold text-[#001733] uppercase tracking-widest">Faixas EtÃ¡rias</span>
+</div>
+<h2 class="font-headline-lg text-2xl md:text-4xl text-[#001733] font-black">
+            NOSSAS CATEGORIAS DE BASE
+          </h2>
+<p class="font-body-md text-sm md:text-base text-[#43474e] mt-2">
+            Metodologias personalizadas para cada ciclo de aprendizagem esportiva.
+          </p>
+</div>
+<div class="mt-4 md:mt-0">
+<a class="inline-flex items-center gap-1 font-button font-bold text-xs md:text-sm text-[#001733] uppercase tracking-wider hover:text-[#FFD700] transition-colors" href="hor_rios_rio_branco_fc7_interativo/code.html">
+            Consulte grade horÃ¡ria <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Sub-7 -->
+<div class="group bg-white rounded-xl overflow-hidden border border-slate-200 stadium-shadow hover-lift flex flex-col">
+<div class="h-48 relative overflow-hidden bg-slate-800">
+<img alt="Sub-7 IniciaÃ§Ã£o Futebol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIO_wB3w8o4qnut2vkrCNj2ZHiY0hk8t0iS6xAlWe_Vtij8nKAHvR3IzLU07VCNXPB176gdT7xs2iiS-pU-SgJzL6s_ZeuwZfeEbnG2LRwSJTARjQMzsSnNE8oDhwVZohSEtIK3wu2JnWejFo1x_LAzIlxh6sCHo5cWkNVccJZPXAVJtwrW2XGHIzQbHT079ruxJA16huW_O6Ai4a3D1veIm5mHwNcNV8vFjgNDIv0geUndiCc3UFtlw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001733]/90 via-[#001733]/30 to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="bg-[#FFD700] text-[#001733] font-bold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide font-label-bold">IniciaÃ§Ã£o LÃºdica</span>
+<h3 class="text-2xl font-black text-white font-headline-md tracking-wide mt-1">SUB-7</h3>
+</div>
+</div>
+<div class="p-5 flex-grow flex flex-col justify-between">
+<div>
+<p class="text-xs text-slate-500 font-bold uppercase mb-1">Idades: 5 a 7 anos</p>
+<p class="font-body-md text-sm text-[#43474e] leading-relaxed mb-4">
+                Desenvolvimento psicomotor, brincadeiras orientadas e primeiros contatos agradÃ¡veis com a bola de futebol.
+              </p>
+</div>
+<a class="w-full py-2.5 text-center border border-[#001733] text-[#001733] rounded font-button font-bold text-xs uppercase hover:bg-[#001733] hover:text-white transition-colors" href="#matriculas">
+              Inscrever no Sub-7
+            </a>
+</div>
+</div>
+<!-- Sub-9 -->
+<div class="group bg-white rounded-xl overflow-hidden border border-slate-200 stadium-shadow hover-lift flex flex-col">
+<div class="h-48 relative overflow-hidden bg-slate-800">
+<img alt="Sub-9 Fundamentos Futebol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpMz53nYrYWsfw9Eki6fGJklSROkSCYKEenSQb1Z-8BZSQX2j7fX8ovBo4a-MUMKZAOS1EADMREIvaKt6FRoXOTv2GvK2PB5SeteBq4rAWfKRJ2uW4HvHB3u52eVeF84FxQe_F0zDan0tr4u8WZOrD1oAz24FRiCR7qSHvuO5E1nILQgOlSFJ-gG0SOemYKoA2QsxGfvdn35BYMEWZrgXd_iE7iQHhUsC4uEdmCJ40_0bOKcmYLs04Pw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001733]/90 via-[#001733]/30 to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="bg-blue-600 text-white font-bold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide font-label-bold">Fundamentos</span>
+<h3 class="text-2xl font-black text-white font-headline-md tracking-wide mt-1">SUB-9</h3>
+</div>
+</div>
+<div class="p-5 flex-grow flex flex-col justify-between">
+<div>
+<p class="text-xs text-slate-500 font-bold uppercase mb-1">Idades: 8 e 9 anos</p>
+<p class="font-body-md text-sm text-[#43474e] leading-relaxed mb-4">
+                DomÃ­nio tÃ©cnico de passe, conduÃ§Ã£o rÃ¡pida, noÃ§Ãµes de ocupaÃ§Ã£o de espaÃ§o e pequenos jogos reduzidos.
+              </p>
+</div>
+<a class="w-full py-2.5 text-center border border-[#001733] text-[#001733] rounded font-button font-bold text-xs uppercase hover:bg-[#001733] hover:text-white transition-colors" href="#matriculas">
+              Inscrever no Sub-9
+            </a>
+</div>
+</div>
+<!-- Sub-11 -->
+<div class="group bg-white rounded-xl overflow-hidden border border-slate-200 stadium-shadow hover-lift flex flex-col">
+<div class="h-48 relative overflow-hidden bg-slate-800">
+<img alt="Sub-11 Competitivo Futebol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxRXPqSTxKsLh_AEuHja3ePHQ5GziaK-Dy4ytD3BC3PA-dlX7Nva6_KxVpMab-AP6gZdmSayblI5wBL7MNkG3xCAKa2j4yvZ7ORw2mmpvav4W5oJkRkDz_z4WyQ8c3VsFgJUIPaqijT149-ZkhgpcZxWclrv9U8pK8hEYK7vHLWyQhc0jmruucJyiqeHdRmWhp79yTYAZW7-lBUk3JBdOzOqBwihdJ7zUe_iq66ZcJhdU33ZId5dAsSw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001733]/90 via-[#001733]/30 to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="bg-[#FFD700] text-[#001733] font-bold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide font-label-bold">Desenvolvimento</span>
+<h3 class="text-2xl font-black text-white font-headline-md tracking-wide mt-1">SUB-11</h3>
+</div>
+</div>
+<div class="p-5 flex-grow flex flex-col justify-between">
+<div>
+<p class="text-xs text-slate-500 font-bold uppercase mb-1">Idades: 10 e 11 anos</p>
+<p class="font-body-md text-sm text-[#43474e] leading-relaxed mb-4">
+                TransiÃ§Ã£o para o jogo coletivo ampliado, aplicaÃ§Ã£o tÃ¡tica, tomada de decisÃ£o e participaÃ§Ã£o em torneios.
+              </p>
+</div>
+<a class="w-full py-2.5 text-center border border-[#001733] text-[#001733] rounded font-button font-bold text-xs uppercase hover:bg-[#001733] hover:text-white transition-colors" href="#matriculas">
+              Inscrever no Sub-11
+            </a>
+</div>
+</div>
+<!-- Sub-15 -->
+<div class="group bg-white rounded-xl overflow-hidden border border-slate-200 stadium-shadow hover-lift flex flex-col border-t-4 border-t-[#FFD700]">
+<div class="h-48 relative overflow-hidden bg-slate-800">
+<img alt="Sub-15 Alto Rendimento Futebol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCmG9togX0nfLs_EVkWSZreXVq_NsBnPs1mjx9GAYjN7FB9piGZgNdZ79K2LE_VjFP9orYe2_qDyI30HFPr7VuYbE_0KD18yZM1Iaw-G-ubf79zL54Iukaj4u7NWvXQMoVcGSa5VvlBzFBGl9OqG8rZ--sh_BDVt6Q9CLEWncJMBVoI94Mq20VfZs5N-HNh7kt8ZDTtdhV7XZd4267eY6p9lcQ7HBosKL0NBldGLR37R8aZSx-uxS0yw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001733]/90 via-[#001733]/30 to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="bg-[#FFD700] text-[#001733] font-bold text-[10px] uppercase px-2 py-0.5 rounded tracking-wide font-label-bold">Alto Rendimento</span>
+<h3 class="text-2xl font-black text-white font-headline-md tracking-wide mt-1">SUB-15</h3>
+</div>
+</div>
+<div class="p-5 flex-grow flex flex-col justify-between">
+<div>
+<p class="text-xs text-slate-500 font-bold uppercase mb-1">Idades: 12 a 15 anos</p>
+<p class="font-body-md text-sm text-[#43474e] leading-relaxed mb-4">
+                PreparaÃ§Ã£o competitiva de elite, periodizaÃ§Ã£o tÃ¡tica avanÃ§ada, forÃ§a e ponte com categorias de base oficiais de grandes clubes.
+              </p>
+</div>
+<a class="w-full py-2.5 text-center bg-[#001733] text-white rounded font-button font-bold text-xs uppercase hover:bg-secondary transition-colors" href="#matriculas">
+              Inscrever no Sub-15
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Vibrante - MatrÃ­culas Abertas -->
+<section class="py-16 md:py-20 px-4 md:px-12 bg-gradient-to-r from-[#001229] via-[#001733] to-[#0a2754] text-white relative overflow-hidden" id="matriculas">
+<div class="absolute right-0 top-0 w-96 h-96 bg-[#FFD700]/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-[1080px] mx-auto text-center relative z-10">
+<span class="inline-block bg-[#FFD700] text-[#001733] text-xs font-extrabold uppercase px-3 py-1 rounded mb-4 tracking-widest font-label-bold">
+        Vagas Limitadas por Turma
+      </span>
+<h2 class="font-display-lg text-3xl sm:text-4xl md:text-5xl font-black mb-6 uppercase tracking-tight">
+        MATRÃCULAS ABERTAS PARA A TEMPORADA
+      </h2>
+<p class="font-body-lg text-base md:text-xl text-slate-200 max-w-2xl mx-auto mb-8 leading-relaxed">
+        DÃª ao seu filho a oportunidade de treinar com estrutura de ponta, metodologia comprovada e professores especializados. Agende agora uma aula experimental gratuita!
+      </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+<a class="w-full sm:w-auto flex-1 bg-[#FFD700] text-[#001733] font-button font-black text-sm md:text-base px-8 py-4 rounded-lg shadow-xl hover:bg-white hover-lift transition-all text-center" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+          GARANTIR MINHA VAGA
+        </a>
+<a class="w-full sm:w-auto border border-white/40 text-white font-button font-bold text-sm md:text-base px-6 py-4 rounded-lg hover:bg-white/10 transition-colors text-center" href="hor_rios_rio_branco_fc7_interativo/code.html">
+          VER HORÃRIOS
+        </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Padronizado e Consistente -->
+<footer class="bg-[#001733] text-slate-300 font-body-md text-sm w-full py-16 border-t-4 border-[#FFD700]">
+<div class="max-w-[1280px] mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+<!-- Brand Column -->
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<img alt="Rio Branco FC7 Escudo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGB45Pwj2JZmhp2RPq0CkM6WGhF4BVtA8kKR4tPe-R3mRxKk45cZf2O5Dfkg9zFX3S-9iLe2BLv39-214vYBDSqjTtYGM5m_ZSZJoTSxUeVRLVuXdFWJRefRFq42nm0hJ6F5stSM4EHta08jFV8WSRj4ZatQCEGVonT3r95KI9LB4XJUwAk1FQ9GsFVQZx2N6wGwrTqrRqWaP77FXxqstqJZNkKzgHOvYcgnO34TBuIkE_fZaQG0cm4NaFe9FIjNRExEo"/>
+<span class="font-headline-md text-xl font-black text-[#FFD700] tracking-wide">Rio Branco FC7</span>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+        A excelÃªncia na formaÃ§Ã£o esportiva. Moldando o futuro do futebol de base com disciplina, tÃ©cnica e paixÃ£o pelas quatro linhas.
+      </p>
+<div class="flex gap-3 pt-2">
+<a aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:text-[#FFD700] hover:bg-white/20 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+</a>
+<a aria-label="Compartilhar" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:text-[#FFD700] hover:bg-white/20 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+</div>
+</div>
+<!-- Links Ãšteis -->
+<div>
+<h4 class="font-label-bold text-white uppercase text-xs tracking-widest font-bold mb-4">Links Ãšteis</h4>
+<ul class="space-y-2.5">
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="#">InÃ­cio</a></li>
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="treinamentos_e_equipes/code.html">Metodologia</a></li>
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="categorias_e_atletas_rio_branco_fc7/code.html">Categorias</a></li>
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="hor_rios_rio_branco_fc7_interativo/code.html">HorÃ¡rios</a></li>
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="elenco_e_alunos_rio_branco_fc7/code.html">Elenco</a></li>
+</ul>
+</div>
+<!-- Institucional -->
+<div>
+<h4 class="font-label-bold text-white uppercase text-xs tracking-widest font-bold mb-4">Institucional</h4>
+<ul class="space-y-2.5">
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="quem_somos_rio_branco_fc7_corrigida/code.html">Quem Somos</a></li>
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="#">PolÃ­tica de Privacidade</a></li>
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="#">Termos de Uso</a></li>
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="#">Trabalhe Conosco</a></li>
+<li><a class="text-slate-400 hover:text-[#FFD700] transition-colors block" href="#contato">Contato</a></li>
+</ul>
+</div>
+<!-- Fale Conosco -->
+<div id="contato">
+<h4 class="font-label-bold text-white uppercase text-xs tracking-widest font-bold mb-4">Fale Conosco</h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-2.5 text-slate-400">
+<span class="material-symbols-outlined text-[#FFD700] text-lg shrink-0 mt-0.5">location_on</span>
+<span>Av. dos Esportes, 1000 - Arena Central, SÃ£o Paulo - SP</span>
+</li>
+<li class="flex items-center gap-2.5 text-slate-400">
+<span class="material-symbols-outlined text-[#FFD700] text-lg shrink-0">call</span>
+<span>(11) 99999-9999</span>
+</li>
+<li class="flex items-center gap-2.5 text-slate-400">
+<span class="material-symbols-outlined text-[#FFD700] text-lg shrink-0">mail</span>
+<span>contato@riobrancofc7.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-4 md:px-12 mt-12 pt-6 border-t border-white/10 text-center md:text-left text-xs text-slate-400">
+    Â© 2024 Rio Branco FC7 Academy. Formando CampeÃµes para a Vida. Todos os direitos reservados.
+  </div>
+</footer>
+</body></html>
+
