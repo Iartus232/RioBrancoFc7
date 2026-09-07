@@ -1,0 +1,472 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Horários - Rio Branco FC7</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@400;700;900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#4c3f00",
+                    "secondary-fixed-dim": "#a7c8ff",
+                    "secondary": "#3a5f94",
+                    "surface-container": "#edeeef",
+                    "on-background": "#191c1d",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#705d00",
+                    "on-tertiary-fixed-variant": "#544600",
+                    "primary": "#000613",
+                    "on-primary-fixed-variant": "#2f486a",
+                    "surface-container-highest": "#e1e3e4",
+                    "outline": "#74777f",
+                    "on-secondary-container": "#294f83",
+                    "on-surface-variant": "#43474e",
+                    "tertiary-fixed-dim": "#e9c400",
+                    "on-secondary-fixed-variant": "#1f477b",
+                    "background": "#f8f9fa",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-container": "#9fc2fe",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#e7e8e9",
+                    "on-surface": "#191c1d",
+                    "secondary-fixed": "#d5e3ff",
+                    "surface": "#f8f9fa",
+                    "primary-container": "#001f3f",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e1e3e4",
+                    "surface-bright": "#f8f9fa",
+                    "surface-dim": "#d9dadb",
+                    "inverse-primary": "#afc8f0",
+                    "tertiary-fixed": "#ffe16d",
+                    "inverse-surface": "#2e3132",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#476083",
+                    "on-primary-container": "#6f88ad",
+                    "outline-variant": "#c4c6cf",
+                    "primary-fixed": "#d4e3ff",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#afc8f0",
+                    "tertiary-container": "#c9a900",
+                    "on-primary-fixed": "#001c3a",
+                    "on-secondary-fixed": "#001b3c",
+                    "on-tertiary-fixed": "#221b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "12px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "xl": "80px",
+                    "xs": "4px",
+                    "lg": "48px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "button": ["Montserrat"],
+                    "label-bold": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "headline-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "900"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "button": ["16px", {"lineHeight": "16px", "fontWeight": "700"}],
+                    "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .stadium-shadow {
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20">
+<!-- TopNavBar -->
+<nav class="bg-primary-container dark:bg-primary-container text-tertiary dark:text-tertiary-fixed font-button text-button uppercase tracking-wider fixed top-0 w-full z-50 border-b border-outline-variant/20 shadow-md">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-1280 mx-auto">
+<a class="flex items-center transition-transform" href="#">
+<img alt="Rio Branco FC7" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMuqZjbSs3QGTPaVUK8fXSQbDgWeIj5rPHT0FVItBsfMnaKGWHEZwzrEMYoKytFiXp6OExYoJc3h6vGTKEB74aNpf3T2mENJiBwy5p_H0tAUOf7SqlpE9QVPAH0gFz52mebRmCcmswtkhL-M3mZbhsiz6gsXEAs6GqZHO3lnPgy3CJ8MgjapZ0vX1L-ZTHTE-CF-098Tw2gjWiN0DWpXynpEZ1j-7zCTFZWzTupX88omtLoPvvUPwbv2KT-Xz8A6qASkk">
+</a>
+<ul class="hidden md:flex gap-gutter items-center">
+<li class=""><a class="text-white hover:text-tertiary transition-colors duration-300 block pb-1 tracking-wider" href="#">INÍCIO</a></li>
+<li class=""><a class="text-white hover:text-tertiary transition-colors duration-300 block pb-1 tracking-wider" href="#">QUEM SOMOS</a></li>
+<li class=""><a class="text-white hover:text-tertiary transition-colors duration-300 block pb-1 tracking-wider" href="#">METODOLOGIA</a></li>
+<li class=""><a class="text-white hover:text-tertiary transition-colors duration-300 block pb-1 tracking-wider" href="#">CATEGORIAS</a></li>
+<li class=""><a class="text-white border-b-2 border-tertiary pb-1 transition-all duration-300 block tracking-wider font-bold" href="#">HORÁRIOS</a></li>
+<li class=""><a class="text-white hover:text-tertiary transition-colors duration-300 block pb-1 tracking-wider" href="#">NOTÍCIAS</a></li>
+<li class=""><a class="text-white hover:text-tertiary transition-colors duration-300 block pb-1 tracking-wider" href="#">ELENCO</a></li>
+</ul>
+<button class="bg-[#FFD700] text-primary-container font-button text-button uppercase px-md py-sm rounded hover:bg-tertiary hover:text-on-tertiary transition-colors hover-lift hidden md:block">QUERO FAZER PARTE</button>
+<button class="md:hidden text-tertiary"><span class="material-symbols-outlined text-3xl">menu</span></button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-[40vh] min-h-[320px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A dynamic, wide-angle shot of a pristine artificial turf football pitch under bright, high-key stadium lights. The focus is on the lush green texture of the field, with crisp white lines fading into the distance. The overall aesthetic is highly modern, corporate, and clean, emphasizing a premium sports training facility environment. Deep shadows and bright highlights create a sense of professional aspiration and athletic discipline." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAxNy42glqlaT0RPbPxM1ccMNa8lUvOuW4TVDIHN0-mCwoLztxXdJLbV6CRSg1b25cB0DT1AC4OmTcto7t_kbHx0Mg_JSpD22-zkCtxzA3C_InvmLczNx6L243oj2iuLOKbFtQis7UO8119IJW-v3s27fElJc6hbydxsVkz71ZlJwkMwzOqYF1X_WU4zjO6QPS4c0TDRLF3vxnjHouWPFyK5IX3dXhBW8octYScKU-yhFa0OCdk28sbNw&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/80 to-transparent"></div>
+<div class="relative z-10 text-center px-margin-mobile">
+<h1 class="font-display-lg text-display-lg text-on-primary uppercase italic mb-sm">
+                Grade de Horários
+            </h1>
+<p class="font-body-lg text-body-lg text-secondary-fixed max-w-2xl mx-auto">
+                Organização, disciplina e foco. Confira os horários de treinamento de cada categoria e programe-se para o desenvolvimento em alto nível.
+            </p>
+</div>
+</section>
+<!-- Schedules Content -->
+<main class="py-xl px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto">
+<!-- Category Filter Interactive -->
+<div class="flex flex-wrap justify-center gap-sm mb-lg" id="filter-buttons">
+<button class="filter-btn bg-primary-container text-tertiary-fixed font-label-bold text-label-bold px-5 py-2 rounded-full uppercase tracking-wider border-2 border-tertiary-fixed transition-all shadow-sm" data-filter="all" type="button">Todos</button>
+<button class="filter-btn bg-surface-container text-on-surface-variant font-label-bold text-label-bold px-5 py-2 rounded-full uppercase tracking-wider border-2 border-transparent hover:bg-surface-variant hover:text-primary-container transition-all" data-filter="sub-7" type="button">Sub-7</button>
+<button class="filter-btn bg-surface-container text-on-surface-variant font-label-bold text-label-bold px-5 py-2 rounded-full uppercase tracking-wider border-2 border-transparent hover:bg-surface-variant hover:text-primary-container transition-all" data-filter="sub-9" type="button">Sub-9</button>
+<button class="filter-btn bg-surface-container text-on-surface-variant font-label-bold text-label-bold px-5 py-2 rounded-full uppercase tracking-wider border-2 border-transparent hover:bg-surface-variant hover:text-primary-container transition-all" data-filter="sub-11" type="button">Sub-11</button>
+<button class="filter-btn bg-surface-container text-on-surface-variant font-label-bold text-label-bold px-5 py-2 rounded-full uppercase tracking-wider border-2 border-transparent hover:bg-surface-variant hover:text-primary-container transition-all" data-filter="sub-15" type="button">Sub-15</button>
+</div>
+<!-- Bento Grid for Schedules -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter lg:grid-cols-4" id="schedule-cards">
+<!-- Card Sub-7 -->
+<div class="schedule-card bg-surface rounded-lg stadium-shadow border-t-[4px] border-tertiary p-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full" data-category="sub-7">
+<div class="flex justify-between items-start mb-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container font-bold">Sub-7</h3>
+<div class="flex gap-2 mt-2"><span class="bg-primary-container text-on-primary font-label-bold text-[12px] px-2 py-1 rounded uppercase">Iniciação</span></div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">sports_soccer</span>
+</div>
+<div class="space-y-sm flex-grow">
+<div class="bg-surface-container-low p-sm rounded flex items-center justify-between border-l-4 border-secondary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">sports_soccer</span>
+<span class="font-body-md text-on-surface font-semibold">Terça e Quinta</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-variant">
+<span class="font-body-md text-on-surface-variant">Manhã</span>
+<span class="font-label-bold text-primary-container">08:30 - 10:00</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-variant">
+<span class="font-body-md text-on-surface-variant">Tarde</span>
+<span class="font-label-bold text-primary-container">15:00 - 16:30</span>
+</div>
+</div>
+</div>
+<!-- Card Sub-9 -->
+<div class="schedule-card bg-surface rounded-lg stadium-shadow border-t-[4px] border-tertiary p-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full" data-category="sub-9">
+<div class="flex justify-between items-start mb-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container font-bold">Sub-9</h3>
+<div class="flex gap-2 mt-2"><span class="bg-primary-container text-on-primary font-label-bold text-[12px] px-2 py-1 rounded uppercase">Iniciação</span></div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">sports</span>
+</div>
+<div class="space-y-sm flex-grow">
+<div class="bg-surface-container-low p-sm rounded flex items-center justify-between border-l-4 border-secondary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">sports</span>
+<span class="font-body-md text-on-surface font-semibold">Terça e Quinta</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-variant">
+<span class="font-body-md text-on-surface-variant">Manhã</span>
+<span class="font-label-bold text-primary-container">08:30 - 10:00</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-variant">
+<span class="font-body-md text-on-surface-variant">Tarde</span>
+<span class="font-label-bold text-primary-container">15:00 - 16:30</span>
+</div>
+</div>
+</div>
+<!-- Card Sub-11 -->
+<div class="schedule-card bg-surface rounded-lg stadium-shadow border-t-[4px] border-tertiary p-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full" data-category="sub-11">
+<div class="flex justify-between items-start mb-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container font-bold">Sub-11</h3>
+<div class="flex gap-2 mt-2"><span class="bg-primary-container text-on-primary font-label-bold text-[12px] px-2 py-1 rounded uppercase">Desenvolvimento</span></div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">trophy</span>
+</div>
+<div class="space-y-sm flex-grow">
+<div class="bg-surface-container-low p-sm rounded flex items-center justify-between border-l-4 border-secondary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">trophy</span>
+<span class="font-body-md text-on-surface font-semibold">Seg, Qua e Sex</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-variant">
+<span class="font-body-md text-on-surface-variant">Manhã</span>
+<span class="font-label-bold text-primary-container">08:30 - 10:00</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-variant">
+<span class="font-body-md text-on-surface-variant">Tarde</span>
+<span class="font-label-bold text-primary-container">15:00 - 16:30</span>
+</div>
+</div>
+</div>
+<!-- Card Sub-15 -->
+<div class="schedule-card bg-surface rounded-lg stadium-shadow border-t-[4px] border-[#FFD700] p-md hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden" data-category="sub-15">
+<div class="absolute top-0 right-0 bg-[#FFD700] text-primary-container font-label-bold text-[10px] px-3 py-1 rounded-bl-lg uppercase tracking-widest font-bold z-10">Alto Rendimento</div>
+<div class="flex justify-between items-start mb-md relative z-10">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container font-bold">Sub-15</h3>
+<div class="flex gap-2 mt-2"><span class="bg-primary-container text-on-primary font-label-bold text-[12px] px-2 py-1 rounded uppercase">Performance</span></div>
+</div>
+<span class="material-symbols-outlined text-[#FFD700] text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">local_fire_department</span>
+</div>
+<div class="space-y-sm flex-grow relative z-10">
+<div class="bg-surface-container-low p-sm rounded flex items-center justify-between border-l-4 border-secondary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">local_fire_department</span>
+<span class="font-body-md text-on-surface font-semibold">Seg, Qua e Sex</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-variant">
+<span class="font-body-md text-on-surface-variant">Manhã</span>
+<span class="font-label-bold text-primary-container">10:00 - 11:30</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-variant">
+<span class="font-body-md text-on-surface-variant">Tarde</span>
+<span class="font-label-bold text-primary-container">16:30 - 18:00</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Information / Callout Section -->
+<section class="bg-primary-container text-on-primary py-lg px-margin-mobile md:px-margin-desktop relative overflow-hidden my-xl">
+<div class="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-1/4 -translate-y-1/4">
+<span class="material-symbols-outlined text-[300px]" style="font-variation-settings: 'FILL' 1;">sports_soccer</span>
+</div>
+<div class="max-w-[1280px] mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-lg">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg font-bold mb-sm text-tertiary-fixed">Dias de Jogo &amp; Competições</h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed">
+                    Aos sábados, nossas equipes participam de amistosos preparatórios, campeonatos regionais e festivais internos. A convocação é feita semanalmente pela comissão técnica, priorizando o desempenho, assiduidade e disciplina escolar.
+                </p>
+</div>
+<button class="bg-transparent border-2 border-secondary text-secondary-fixed font-button text-button uppercase tracking-wider px-8 py-4 rounded-full hover:bg-secondary hover:text-on-secondary transition-colors duration-300 whitespace-nowrap">
+                Ver Calendário de Jogos
+            </button>
+</div>
+</section>
+<!-- FAQ Section Interactive -->
+<section class="py-xl bg-surface-container-lowest px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[800px] mx-auto">
+<div class="text-center mb-lg">
+<h2 class="font-display-lg text-3xl md:text-headline-lg text-primary-container font-black uppercase italic mb-xs">Dúvidas Frequentes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Informações essenciais sobre matrículas e avaliações técnicas.</p>
+</div>
+<div class="space-y-4" id="faq-accordion">
+<!-- FAQ Item 1 -->
+<div class="faq-item bg-surface border border-outline-variant/30 rounded-lg shadow-sm hover:shadow-md transition-all">
+<button class="faq-toggle w-full text-left p-md flex justify-between items-center group focus:outline-none" type="button">
+<h4 class="font-label-bold text-[16px] text-primary-container group-hover:text-secondary transition-colors">Como funciona o processo de matrícula?</h4>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-transform duration-300 faq-icon">add</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-md text-on-surface-variant font-body-md">
+<div class="pb-md pt-1 border-t border-surface-variant/40 leading-relaxed">
+                O processo inicia com o agendamento prévio de uma aula experimental gratuita. Após a avaliação técnica do treinador responsável, os pais ou responsáveis realizam o preenchimento da ficha cadastral e entrega do atestado médico liberatório para a prática esportiva.
+            </div>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item bg-surface border border-outline-variant/30 rounded-lg shadow-sm hover:shadow-md transition-all">
+<button class="faq-toggle w-full text-left p-md flex justify-between items-center group focus:outline-none" type="button">
+<h4 class="font-label-bold text-[16px] text-primary-container group-hover:text-secondary transition-colors">O aluno pode fazer uma aula experimental?</h4>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-transform duration-300 faq-icon">add</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-md text-on-surface-variant font-body-md">
+<div class="pb-md pt-1 border-t border-surface-variant/40 leading-relaxed">
+                Sim! Oferecemos 1 aula experimental 100% gratuita para conhecer nossa metodologia, equipe técnica e infraestrutura de ponta antes de formalizar a matrícula. Basta agendar diretamente com a secretaria ou pelo botão "Quero Fazer Parte".
+            </div>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item bg-surface border border-outline-variant/30 rounded-lg shadow-sm hover:shadow-md transition-all">
+<button class="faq-toggle w-full text-left p-md flex justify-between items-center group focus:outline-none" type="button">
+<h4 class="font-label-bold text-[16px] text-primary-container group-hover:text-secondary transition-colors">Quais os critérios para a equipe de Alto Rendimento (Sub-15)?</h4>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-transform duration-300 faq-icon">add</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-md text-on-surface-variant font-body-md">
+<div class="pb-md pt-1 border-t border-surface-variant/40 leading-relaxed">
+                Para ingressar na categoria Sub-15 de Alto Rendimento, o atleta passa por avaliação técnica minuciosa, análise de disciplina tática, assiduidade aos treinos e requer aprovação final pela comissão técnica para participar das competições federadas e regionais.
+            </div>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="faq-item bg-surface border border-outline-variant/30 rounded-lg shadow-sm hover:shadow-md transition-all">
+<button class="faq-toggle w-full text-left p-md flex justify-between items-center group focus:outline-none" type="button">
+<h4 class="font-label-bold text-[16px] text-primary-container group-hover:text-secondary transition-colors">Qual uniforme é necessário para os primeiros treinos?</h4>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-transform duration-300 faq-icon">add</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-md text-on-surface-variant font-body-md">
+<div class="pb-md pt-1 border-t border-surface-variant/40 leading-relaxed">
+                Para a aula experimental e os primeiros dias, o aluno pode comparecer com calção preto ou azul marinho, camiseta esportiva leve e chuteira para gramado society (sem travas altas). Após a matrícula confirmada, o kit oficial de treinamento do Rio Branco FC7 é fornecido.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-fixed font-body-md text-body-md w-full py-xl border-t-4 border-tertiary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-1280 mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-sm mb-md">
+<img alt="Rio Branco FC7 Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_o6NyclHqPqkQfpVABNsH44ibUyu1uecRHWTu9kpo07RY-61COsyC62UXhA5SCsslP_ehmyzKk7TKMLTeNGNKZT0MV2fnEQ-yol6-6C-oHu0dPLU-W4wbnoz4GpAEDuRZVJ2DeG96B4tM1eB1DqlBjjgfzQL58OdwTPtT7v10d9iHJAOZ9sxBOotpJgn0xtAfi7_zSuPR7T11gZHNkZBpsEQeJkz-mDntTMMq4FqaE9v6XYA7XwKoRBxxVNN2JtKMeHo">
+<span class="font-headline-md text-headline-md font-black text-white">Rio Branco FC7</span>
+</div>
+<p class="text-on-primary-fixed-variant mb-md text-sm">A excelência na formação esportiva. Moldando o futuro do futebol com disciplina, técnica e paixão.</p>
+<div class="flex gap-sm">
+<a class="w-10 h-10 rounded-full bg-surface-tint/20 flex items-center justify-center text-on-primary hover:text-tertiary hover:scale-110 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-tint/20 flex items-center justify-center text-on-primary hover:text-tertiary hover:scale-110 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-bold text-white uppercase mb-sm">Links Úteis</h4>
+<ul class="space-y-sm">
+<li class=""><a class="text-on-primary-fixed-variant hover:text-tertiary transition-colors duration-200 block" href="#">Início</a></li>
+<li class=""><a class="text-on-primary-fixed-variant hover:text-tertiary transition-colors duration-200 block" href="#">Metodologia</a></li>
+<li class=""><a class="text-on-primary-fixed-variant hover:text-tertiary transition-colors duration-200 block" href="#">Categorias</a></li>
+<li class=""><a class="text-on-primary-fixed-variant hover:text-tertiary transition-colors duration-200 block" href="#">Horários</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-bold text-white uppercase mb-sm">Institucional</h4>
+<ul class="space-y-sm">
+<li class=""><a class="text-on-primary-fixed-variant hover:text-tertiary transition-colors duration-200 block" href="#">Quem Somos</a></li>
+<li class=""><a class="text-on-primary-fixed-variant hover:text-tertiary transition-colors duration-200 block" href="#">Política de Privacidade</a></li>
+<li class=""><a class="text-on-primary-fixed-variant hover:text-tertiary transition-colors duration-200 block" href="#">Termos de Uso</a></li>
+<li class=""><a class="text-on-primary-fixed-variant hover:text-tertiary transition-colors duration-200 block" href="#">Trabalhe Conosco</a></li>
+<li class=""><a class="text-on-primary-fixed-variant hover:text-tertiary transition-colors duration-200 block" href="#">Contato</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-bold text-white uppercase mb-sm">Fale Conosco</h4>
+<ul class="space-y-sm">
+<li class="flex items-start gap-xs text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-sm mt-1">location_on</span>
+<span class="">Av. dos Esportes, 1000 - Arena Central.</span>
+</li>
+<li class="flex items-center gap-xs text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-sm">call</span>
+<span class="">(11) 99999-9999</span>
+</li>
+<li class="flex items-center gap-xs text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-sm">mail</span>
+<span class="">contato@riobrancofc7.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-1280 mx-auto px-margin-mobile md:px-margin-desktop mt-xl pt-md border-t border-outline-variant/10 text-center md:text-left text-sm text-on-primary-fixed-variant">
+        © 2024 Rio Branco FC7 Academy. Formando Campeões para a Vida.
+    </div>
+</footer>
+<!-- Interactive Vanilla JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. FILTRO DE CATEGORIAS (SUB)
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const scheduleCards = document.querySelectorAll('.schedule-card');
+
+    const activeClasses = ['bg-primary-container', 'text-tertiary-fixed', 'border-tertiary-fixed', 'shadow-sm'];
+    const inactiveClasses = ['bg-surface-container', 'text-on-surface-variant', 'border-transparent'];
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filterValue = btn.getAttribute('data-filter');
+
+            // Atualiza botões
+            filterButtons.forEach(b => {
+                b.classList.remove(...activeClasses);
+                b.classList.add(...inactiveClasses);
+            });
+            btn.classList.remove(...inactiveClasses);
+            btn.classList.add(...activeClasses);
+
+            // Filtra os cards
+            scheduleCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filterValue === 'all' || category === filterValue) {
+                    card.classList.remove('hidden');
+                    // Animação de entrada suave
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(10px)';
+                    setTimeout(() => {
+                        card.style.transition = 'all 0.3s ease';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 20);
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+
+    // 2. FAQ ACCORDION INTERATIVO
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const toggleBtn = item.querySelector('.faq-toggle');
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon');
+
+        toggleBtn.addEventListener('click', () => {
+            const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+            // Fecha todos os outros itens para um efeito sanfona limpo
+            faqItems.forEach(otherItem => {
+                const otherContent = otherItem.querySelector('.faq-content');
+                const otherIcon = otherItem.querySelector('.faq-icon');
+                otherContent.style.maxHeight = '0px';
+                otherIcon.textContent = 'add';
+                otherIcon.style.transform = 'rotate(0deg)';
+                otherItem.classList.remove('border-secondary/40', 'bg-surface-container-lowest');
+            });
+
+            // Se não estava aberto, abre o clicado
+            if (!isOpen) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.textContent = 'remove';
+                icon.style.transform = 'rotate(180deg)';
+                item.classList.add('border-secondary/40');
+            }
+        });
+    });
+});
+</script>
+
+
+</body></html>
